@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-         <h1> Welcome </h1>
+         <h1> <?= $first; ?> </h1>
 
     </header>
     <main>

@@ -13,6 +13,6 @@ class CsvContentController
      */
     public function csvContent(): string
     {
-        return VIEW_PATH . '/csv_content.php';
+        return (new View('csv_content', []))->render();
     }
 }

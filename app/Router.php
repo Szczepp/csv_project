@@ -7,6 +7,7 @@ namespace App;
 use App\Exceptions\RouteNotFoundException;
 use App\Action;
 
+
 class Router
 {
     private array $routes;
