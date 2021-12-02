@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace App;
+namespace App\Controllers;
 
 
-class Home
+class HomeController
 {
     /**
      * @return string
      */
     public function index(): string
     {
-        return 'Home page';
+        return VIEW_PATH . '/index.php';
     }
 }
