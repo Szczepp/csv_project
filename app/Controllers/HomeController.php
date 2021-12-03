@@ -17,4 +17,5 @@ class HomeController
         //return (new View('index', []))->render();
         return View::make('index', ['first'=>'first parameter', 'second'=>'another'])->render();
     }
+
 }

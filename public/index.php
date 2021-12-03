@@ -17,3 +17,12 @@ $router
     ->register('/content', new Action(App\Controllers\CsvContentController::class, 'csvContent'));
 
 echo $router->resolve($_SERVER['REQUEST_URI']);
+
+echo '<pre>';
+var_dump($_FILES);
+echo '</pre>';
+$filePath = STORAGE_PATH . '/' . $_FILES['file']['name'];
+move_uploaded_file($_FILES['file']['tmp_name'], $filePath);
+echo '<pre>';
+var_dump(pathinfo($filePath));
+echo '</pre>';

@@ -13,7 +13,7 @@
     </header>
     <main>
         <div class="input_form">
-            <form action="#" method="POST">
+            <form action="#" method="POST" enctype="multipart/form-data">
                 <label for="file"><h3> Insert a .csv file: </h3></label>
                 <input type="file" name="file">
                 <button> Send you file </button>
