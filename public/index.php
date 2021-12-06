@@ -3,6 +3,7 @@
 use App\Router;
 use App\Controllers\HomeController;
 use App\Controllers\CsvContentController;
+use App\Controllers\FormController;
 use App\Action;
 
 require_once __DIR__ . '/../vendor/autoload.php';
@@ -18,11 +19,3 @@ $router
 
 echo $router->resolve($_SERVER['REQUEST_URI']);
 
-echo '<pre>';
-var_dump($_FILES);
-echo '</pre>';
-$filePath = STORAGE_PATH . '/' . $_FILES['file']['name'];
-move_uploaded_file($_FILES['file']['tmp_name'], $filePath);
-echo '<pre>';
-var_dump(pathinfo($filePath));
-echo '</pre>';

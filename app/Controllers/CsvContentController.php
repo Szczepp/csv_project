@@ -13,6 +13,6 @@ class CsvContentController
      */
     public function csvContent(): string
     {
-        return (new View('csv_content', []))->render();
+        return (new View('csv_content', ['fileArray' => (new FormController('file'))->getArray()]))->render();
     }
 }

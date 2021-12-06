@@ -44,7 +44,10 @@ class View
             return ob_get_clean();
     }
 
-
+    /**
+     * @param string $name
+     * @return mixed
+     */
     public function __get(string $name)
     {
         // TODO: Implement __get() method.

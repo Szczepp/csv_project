@@ -23,8 +23,13 @@ class FormController
      */
     public function moveFile(): self
     {
+        if (! isset($_FILES[$this->formName]['name'])) {
+            echo '$_FILE is not set';
+        }
+
         $this->filePath =STORAGE_PATH . '/' . $_FILES[$this->formName]['name'];
         move_uploaded_file($_FILES[$this->formName]['tmp_name'], $this->filePath);
+        unset($_FILES[$this->formName]['name']);
         return $this;
     }
 
@@ -40,7 +45,6 @@ class FormController
         }
         $file = fopen($this->filePath, 'r');
         $i = 0;
-        echo $this->filePath;
 
         while (($line = fgetcsv($file, 1000, ',')) !== false) {
             $outputArray[$i]['date'] = $line[0];
@@ -49,9 +53,6 @@ class FormController
             $outputArray[$i]['amount'] = $line[3];
             $i++;
         }
-        echo '<pre>';
-        var_dump($outputArray);
-        echo '</pre>';
         fclose($file);
         return $outputArray;
 

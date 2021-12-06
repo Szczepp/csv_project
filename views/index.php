@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php include '../static/base_header.php'; ?>
     <title>Home Page</title>
 </head>
 <body>
     <header>
-         <h1> <?= $first; ?> </h1>
+         <h1> Home </h1>
 
     </header>
     <main>
         <div class="input_form">
-            <form action="#" method="POST" enctype="multipart/form-data">
+            <form action="/content" method="POST" enctype="multipart/form-data">
                 <label for="file"><h3> Insert a .csv file: </h3></label>
                 <input type="file" name="file">
                 <button> Send you file </button>
@@ -21,7 +19,7 @@
         </div>
     </main>
     <footer>
-        Made by Me
+        <?php include '../static/base_footer.php' ?>
     </footer>
 </body>
 </html>
