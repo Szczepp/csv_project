@@ -8,7 +8,6 @@ You send a .csv file in a form and it returns a table with column names and valu
 * HTML / CSS
 
 ## Setup
-Step 1: Download <br>
-Step 2: 
-, with you CLI go to `csv_project/docker/` and
-run `docker-compose up -d` (-d so it runs in the background) and then type `localhost:8000` in your web browser.
+Step 1: Download the repository <br>
+Step 2: Open your terminal and in project directory run `composer update` to install dependencies (used for class autoloading) <br>
+Step 3: go to `csv_project/docker/` and run `docker-compose up -d` (-d so it runs in the background) and then type `localhost:8000` in your web browser. <br>
