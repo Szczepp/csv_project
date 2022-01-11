@@ -1,5 +1,6 @@
 ## General info
-This project uses basic MVC pattern, has custom routing.
+This project uses basic MVC pattern. <br>
+It has custom routing.
 You send a .csv file in a form and it returns a table with column names and values. 
 (no file validation yet)
 
