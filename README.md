@@ -4,9 +4,9 @@ You send a .csv file in a form and it returns a table with column names and valu
 (no file validation yet)
 
 ## Technologies
-$ PHP 8
-
+* PHP 8
+* HTML / CSS
 
 ## Setup
-
-
+To run this project locally you need to download it and
+run `docker-compose up -d` (-d so it runs in the background) and then type `localhost:8000` in your web browser.
