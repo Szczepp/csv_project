@@ -1,6 +1,6 @@
 ## General info
 This is an educational project that uses basic MVC pattern. <br>
-It has custom routing.
+It has custom routing and view rendering.
 You send a .csv file in a form and it returns a table with column names and values. 
 (no file validation yet)
 
